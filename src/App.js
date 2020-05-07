@@ -13,6 +13,7 @@ function App() {
   React.useEffect( () => {
     const fetchData = async () => {
       const db =  firebase.firestore();
+      console.log("anbsd")
       db.collection("tasks")
       .onSnapshot(function(data) {
         console.log(data)
